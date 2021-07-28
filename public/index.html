@@ -75,7 +75,7 @@
               focus:outline-none
             "
             type="button"
-            onClick=""
+            onClick="toggleNavbar('example-collapse-navbar')"
           >
             <i class="text-white fas fa-bars"></i>
           </button>
@@ -83,4 +83,10 @@
       </div>
     </nav>
   </body>
+  <script>
+    function toggleNavbar(collapseId) {
+      document.getElementById(collapseId).classList.toggle("hidden");
+      document.getElementById(collapseId).classList.toggle("block");
+    }
+  </script>
 </html>
